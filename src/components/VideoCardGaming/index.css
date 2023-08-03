@@ -1,0 +1,12 @@
+.gaming-link {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* 
+@media (max-width: 576px) {
+  .gaming-link {
+    flex-direction: column;
+  }
+} */

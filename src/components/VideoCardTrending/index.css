@@ -1,0 +1,12 @@
+.trending-link {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .trending-link {
+    flex-direction: column;
+  }
+}
