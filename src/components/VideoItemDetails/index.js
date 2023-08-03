@@ -146,7 +146,6 @@ class VideoItemDetails extends Component {
           const isFound = SavedVideosList.find(
             eachVideo => videosDetailsData.id === eachVideo.id,
           )
-          const saveText = isFound ? 'Saved' : 'Save'
 
           return (
             <>
@@ -188,7 +187,7 @@ class VideoItemDetails extends Component {
                         type="button"
                       >
                         <BiListPlus />
-                        <ActionButtonPara>{saveText}</ActionButtonPara>
+                        <ActionButtonPara>Save</ActionButtonPara>
                       </ActionSaveIconButton>
                     </VideoItemLikeDislikeSaveCard>
                   </VideoItemViewDateLikeSaveContainer>
