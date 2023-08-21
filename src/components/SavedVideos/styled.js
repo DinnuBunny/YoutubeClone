@@ -13,7 +13,7 @@ export const SavedContainer = styled.div`
 export const SavedBannerVideoContainer = styled.div`
   margin-left: 20%;
   margin-top: 59px;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   padding: 10px 16px;
   background-color: ${props => (props.isDarkTheme ? '#181818' : '#f9f9f9')};

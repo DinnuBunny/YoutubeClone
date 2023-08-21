@@ -117,10 +117,6 @@ class VideoItemDetails extends Component {
     this.setState({DislikeActive: true, LikeActive: false})
   }
 
-  onSaveVideo = () => {
-    this.setState(prev => ({SavedActive: !prev.SavedActive}))
-  }
-
   renderSuccessView = () => {
     const {videosDetailsData, LikeActive, DislikeActive} = this.state
     const {
@@ -132,7 +128,7 @@ class VideoItemDetails extends Component {
       viewCount,
     } = videosDetailsData
     const {name, profileImageUrl, subscriberCount} = channel
-    console.log(videosDetailsData)
+
     return (
       <NxtWatchContext.Consumer>
         {value => {
@@ -140,7 +136,6 @@ class VideoItemDetails extends Component {
 
           const SaveVideo = () => {
             AddVideoSavedList(videosDetailsData)
-            this.onSaveVideo()
           }
 
           const isFound = SavedVideosList.find(
@@ -187,7 +182,9 @@ class VideoItemDetails extends Component {
                         type="button"
                       >
                         <BiListPlus />
-                        <ActionButtonPara>Save</ActionButtonPara>
+                        <ActionButtonPara>
+                          {isFound ? 'Saved' : 'Save'}
+                        </ActionButtonPara>
                       </ActionSaveIconButton>
                     </VideoItemLikeDislikeSaveCard>
                   </VideoItemViewDateLikeSaveContainer>

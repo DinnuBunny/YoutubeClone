@@ -162,6 +162,7 @@ export const ActionSaveIconButton = styled.button`
 
 export const ActionButtonPara = styled.p`
   margin-left: 5px;
+  color: none;
 `
 
 export const VideoItemCardInfoLogoContainer = styled.div`

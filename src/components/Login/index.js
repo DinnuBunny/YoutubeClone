@@ -137,10 +137,10 @@ class Login extends Component {
                   <LoginButton type="submit">Login</LoginButton>
                   {this.getTheErrorMessage()}
                 </FormContainer>
-                  <div>
-                      <p>Sample UserName: rahul </p>
-                      <p>Sample Password : rahul@2021 </p>
-                  </div>
+                <div className="sample-card">
+                  <p className="samples">UserName: rahul </p>
+                  <p className="samples">Password : rahul@2021 </p>
+                </div>
               </Container>
             </PageContainer>
           )
